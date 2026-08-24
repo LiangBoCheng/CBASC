@@ -2,7 +2,6 @@
 # Requirements
 Please install the corresponding packages according to requirements.txt  
 # Datasets
-Download dataset.  
 The RefSegRS dataset in the paper "RRSIS: Referring Remote Sensing Image Segmentation" can be downloaded from https://gitlab.lrz.de/ai4eo/reasoning/rrsis    
 The rrsisd dataset in the paper "Rotated Multi-Scale Interaction Network for Referring Remote Sensing Image Segmentation" can be downloaded from https://github.com/Lsan2401/RMSIN  
 The RISBench dataset in the paper "Cross-Modal Bidirectional Interaction Model for Referring Remote Sensing Image Segmentation" can be downloaded from https://github.com/HIT-SIRS/CroBIM
