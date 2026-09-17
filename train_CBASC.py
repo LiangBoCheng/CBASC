@@ -20,17 +20,6 @@ os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
 torch.cuda.set_device(0)
 
-def seed_everything(seed=2024):
-    random.seed(seed)
-    os.environ['PYTHONHASHSEED'] = str(seed)
-    np.random.seed(seed)
-    torch.manual_seed(seed)
-    torch.cuda.manual_seed(seed)
-    torch.cuda.manual_seed_all(seed)
-    torch.backends.cudnn.benchmark = False
-    torch.backends.cudnn.deterministic = True
-
-
 def get_dataset(image_set, transform, args):
     if args.dataset == "rrsisd":
         from data.rrsisd_refer_bert import ReferDataset
@@ -332,7 +321,6 @@ def main(args):
 
 if __name__ == "__main__":
     from args import get_parser
-    seed_everything()
     parser = get_parser()
     args = parser.parse_args()
     print('Image size: {}'.format(str(args.img_size)))
